@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::resource('/students', StudentController::class);
+Route::resource('/', StudentController::class);
