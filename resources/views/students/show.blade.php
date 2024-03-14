@@ -1,7 +1,6 @@
-@extends('students.layout')
+@extends('layout')
 @section('content')
- 
- 
+  
 <div class="card">
   <div class="card-header">Students Page</div>
   <div class="card-body">
@@ -17,3 +16,4 @@
   
   </div>
 </div>
+@endsection
