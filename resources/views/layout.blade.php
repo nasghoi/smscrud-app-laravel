@@ -78,9 +78,9 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="sidebar">
-                    <a href="/#home" class="active">Home</a>
-                    <a href="{{ url('/students') }}">Student</a>
-                    <a href="{{ url('/teachers') }}">Teacher</a>
+                    <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Home</a>
+                    <a href="{{ url('/students') }}" class="{{ request()->is('students') ? 'active' : '' }}">Student</a>
+                    <a href="{{ url('/teachers') }}" class="{{ request()->is('teachers') ? 'active' : '' }}">Teacher</a>
                     <a href="#contact">Courses</a>
                     <a href="#about">Enrollment</a>
                     <a href="#about">Payment</a>
